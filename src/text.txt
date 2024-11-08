@@ -1,0 +1,13 @@
+- introduction
+- folder Structure
+- components
+    - functional component
+    - class component
+    - differences b/w class and functional
+- jsx 
+- virtual DOM
+    - diffing algorithm
+    - reconsiliation
+- props
+- state
+difference between props and state
