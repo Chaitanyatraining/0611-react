@@ -11,3 +11,7 @@
 - props
 - state
 difference between props and state
+- stylings
+- Lists and keys
+- form Validation
+
