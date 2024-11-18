@@ -24,13 +24,19 @@ class CounterComp extends Component {
         })
     }
 
+    handleDecrement = () => {
+      this.setState({
+          count: this.state.count - 1
+      })
+  }
+
   render() {
     return (
       <div className='text-center'>
         <h2>CounterComp</h2>
         <h4>Count:{this.state.count}</h4>
         <button className='btn btn-primary' onClick={()=>{this.handleIncrement()}}>Increment</button>
-        <button className='btn btn-danger ms-2'>Decrement</button>
+        <button className='btn btn-danger ms-2' onClick={()=>{this.handleDecrement()}}>Decrement</button>
         <button className='btn btn-warning ms-2'>Reset</button>
       </div>
     )

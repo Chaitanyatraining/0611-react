@@ -3,21 +3,34 @@ import ClassComp from "./ClassComp"
 import Stylings from "./Components/Stylings/Stylings"
 import CounterComp from "./Components/CounterComp"
 import ListsandKeys from "./Components/ListsandKeys"
+import Navbar from "./Components/Navbar"
+import Routing from "./Routing/Routing"
 
 const App = () => {
-  const arr = [1,2,3,4,5]
+  const arr = [1, 2, 3, 4, 5]
   const details = {
-    name:'peter',
-    id:1,
-    email:'peter@gmail.com',
-    contact:9098989898,
-    status:'true'
+    name: 'peter',
+    id: 1,
+    email: 'peter@gmail.com',
+    contact: 9098989898,
+    status: 'true'
   }
-  
-  return(
+
+  return (
     <div className="App">
-      <CounterComp />
-      <ListsandKeys />
+      <Navbar />
+      <Routing />
+
+
+
+
+
+
+
+
+
+      {/* <CounterComp />
+      <ListsandKeys /> */}
       {/* <Stylings /> */}
       {/* <h2>App Comp</h2>
       <FuncComp courseName='ReactJs' arrval={arr} />

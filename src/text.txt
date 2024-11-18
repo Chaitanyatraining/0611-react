@@ -13,5 +13,8 @@
 difference between props and state
 - stylings
 - Lists and keys
+- Routing
+- Fragments
 - form Validation
+- Life Cycle Methods in class components
 
