@@ -12,7 +12,8 @@ class UserData extends Component {
     }
 
     state = {
-        userData:[]
+        userData:[],
+        searchTerm:''
     }
 
     static getDerivedStateFromProps(){
@@ -25,11 +26,26 @@ class UserData extends Component {
         this.getUserData()
     }
 
-    getUserData = async () =>{
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json()
-        console.log(data)
-        this.setState({userData:data})
+    getUserData = async (searchTerm='')=>{
+      const API_URL = `https://jsonplaceholder.typicode.com/users${this.state.searchTerm ? `?q=${this.state.searchTerm}` : ''}`
+    
+      const response = await fetch(API_URL)
+      const data = await response.json()
+      this.setState({userData:data})
+    }
+
+    handleChange = (e) => {
+      this.setState({searchTerm:e.target.value})
+    }
+
+    componentDidUpdate(prevsProps, prevsState){
+      if(prevsState.searchTerm !== this.state.searchTerm){
+        this.getUserData(this.state.searchTerm)
+      }
+    }
+
+    componentWillUnmount(){
+      
     }
 
   render() {
@@ -37,6 +53,12 @@ class UserData extends Component {
     return (
       <div className='text-center'>
         <h2>UserData</h2>
+        <input type="text" placeholder='Enter text' onChange={this.handleChange} />
+        <ul>
+          {this.state.userData.map((user) => (
+            <li key={user.id}>{user.name}</li>
+          ))}
+        </ul>
       </div>
     )
   }

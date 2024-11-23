@@ -17,4 +17,16 @@ difference between props and state
 - Fragments
 - form Validation
 - Life Cycle Methods in class components
+    - Mounting
+    - Updating
+    - Unmounting
+Hooks
+    - useState
+    - useEffect
+    - useRef
+    - useContext
+    - useReducer
+    - useCallBack
+    - useMemo
+    - custom Hooks
 
