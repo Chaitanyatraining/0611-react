@@ -34,6 +34,12 @@ const Navbar = () => {
                                 <Link to='/fetchuserdata' class="nav-link">userdata</Link>
                             </li>
                             <li class="nav-item">
+                                <Link to='/userefhook' class="nav-link">useref</Link>
+                            </li>
+                            <li class="nav-item">
+                                <Link to='/usereducerhook' class="nav-link">usereducer</Link>
+                            </li>
+                            <li class="nav-item">
                                 <Link to='/contactus' class="nav-link">ContactUs</Link>
                             </li>
                             <li class="nav-item">

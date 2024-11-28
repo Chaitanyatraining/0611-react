@@ -5,6 +5,7 @@ import CounterComp from "./Components/CounterComp"
 import ListsandKeys from "./Components/ListsandKeys"
 import Navbar from "./Components/Navbar"
 import Routing from "./Routing/Routing"
+import ParentComp from "./Components/Hooks/ParentComp"
 
 const App = () => {
   const arr = [1, 2, 3, 4, 5]
@@ -17,16 +18,10 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div className="App text-center">
       <Navbar />
+      {/* <ParentComp /> */}
       <Routing />
-
-
-
-
-
-
-
 
 
       {/* <CounterComp />

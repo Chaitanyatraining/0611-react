@@ -8,6 +8,8 @@ import UserData from '../Components/UserData'
 import Pagination from '../Components/Pagination'
 import CounterFunc from '../Components/CounterFunc'
 import FetchUsersData from '../Components/FetchUsersData'
+import UseRefHook from '../Components/Hooks/UseRefHook'
+import UseReducerHook from '../Components/Hooks/UseReducerHook'
 
 const Routing = () => {
   return (
@@ -20,6 +22,8 @@ const Routing = () => {
         <Route path='/counterfunc' element={<CounterFunc />} />
         <Route path='/fetchuserdata' element={<FetchUsersData />} />
         <Route path='/listandkeys' element={<ListsandKeys />} />
+        <Route path='/userefhook' element={<UseRefHook />} />
+        <Route path='/usereducerhook' element={<UseReducerHook />} />
     </Routes>
   )
 }
