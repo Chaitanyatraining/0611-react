@@ -6,6 +6,7 @@ import ListsandKeys from "./Components/ListsandKeys"
 import Navbar from "./Components/Navbar"
 import Routing from "./Routing/Routing"
 import ParentComp from "./Components/Hooks/ParentComp"
+import UseMemoHook from "./Components/Hooks/UseMemoHook"
 
 const App = () => {
   const arr = [1, 2, 3, 4, 5]
@@ -21,7 +22,8 @@ const App = () => {
     <div className="App text-center">
       <Navbar />
       {/* <ParentComp /> */}
-      <Routing />
+      <UseMemoHook />
+      {/* <Routing /> */}
 
 
       {/* <CounterComp />
